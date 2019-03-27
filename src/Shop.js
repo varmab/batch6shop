@@ -93,6 +93,7 @@ class Shop extends Component {
     }
 
     render() {
+        console.log('rendering shop')
         return (
             <div>
                 <h1>Shop</h1>

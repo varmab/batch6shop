@@ -1,7 +1,7 @@
-import React, {Component} from 'react'
+import React, {PureComponent} from 'react'
 import Item from './Item'
 
-class Catalog extends Component{
+class Catalog extends PureComponent{
     constructor(props){
         super(props);
 
@@ -15,7 +15,12 @@ class Catalog extends Component{
         this.props.addItemToCart(item)
     }
 
+    // shouldComponentUpdate(){
+    //     return false;
+    // }
+
     render(){
+        console.log('rendering catalog')
         return(
             <div>
                 <h1>Catalog</h1>
